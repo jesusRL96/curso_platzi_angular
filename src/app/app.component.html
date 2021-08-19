@@ -1,9 +1,15 @@
 <input type="text" [(ngModel)]="title">
 {{ title }}
 
-<div *ngIf="title === 'texto'">
-este es un div
+
+
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'texto1'">Div con texto 1</p>
+  <p *ngSwitchCase="'texto2'">Div con texto 2</p>
+  <p *ngSwitchCase="'texto3'">Div con texto 3</p>
+  <p *ngSwitchDefault="'texto3'">Default</p>
 </div>
+
 
 
 <button (click)="addItem()">Add item</button>
