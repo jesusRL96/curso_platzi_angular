@@ -7,9 +7,8 @@
   <p *ngSwitchCase="'texto1'">Div con texto 1</p>
   <p *ngSwitchCase="'texto2'">Div con texto 2</p>
   <p *ngSwitchCase="'texto3'">Div con texto 3</p>
-  <p *ngSwitchDefault="'texto3'">Default</p>
+  <p *ngSwitchDefault>Default</p>
 </div>
-
 
 
 <button (click)="addItem()">Add item</button>
@@ -20,10 +19,8 @@
     <button (click)="deleteItem(i)">Delete item</button>
   </li>
 </ul>
-<app-product></app-product>
+
 
 <div *ngFor="let product of products">
- {{ product.title }}
- <img [src]="product.image">
- {{ product.price }}
+ <app-product (productClicked)="clickProduct($event)" [product]="product"></app-product>
 </div>
