@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { SwiperModule } from 'swiper/angular';
+import { SharedModule } from './../shared/shared.module';
 
 @NgModule({
     declarations:[
@@ -17,6 +18,7 @@ import { SwiperModule } from 'swiper/angular';
         CommonModule,
         HomeRoutingModule,
         SwiperModule,
+        SharedModule,
     ]
 })
 export class HomeModule {

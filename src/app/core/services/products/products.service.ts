@@ -1,6 +1,6 @@
 import { isNgTemplate } from '@angular/compiler';
 import { Injectable } from '@angular/core';
-import {Product} from './product.model';
+import {Product} from '../../../product.model';
 
 @Injectable({
   providedIn: 'root'
