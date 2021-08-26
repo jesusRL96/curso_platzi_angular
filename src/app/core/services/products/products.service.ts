@@ -16,10 +16,13 @@ export class ProductsService {
   products: Product[] = [];
 
   getAllProducts() {
-    return this.http.get<Product[]>(environment.url_api)
+    return this.http.get<Product[]>(`${environment.url_api}/products`)
   }
   getProduct(id:string) {
-    return this.http.get<Product>(`${environment.url_api}/${id}`);
+    return this.http.get<Product>(`${environment.url_api}/products/${id}`);
+  }
+  createProduct(product:Product) {
+    return this.http.post(`${environment.url_api}/products`,product);
   }
 
 }
