@@ -10,7 +10,7 @@ import { Product } from '../../../product.model';
 })
 export class ProductDetailComponent implements OnInit {
 
-  product: Product;
+  product: any;
 
   constructor(
     private route: ActivatedRoute,
