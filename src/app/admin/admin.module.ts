@@ -21,10 +21,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProductslistComponent } from './components/productslist/productslist.component';
+import { FormProductComponent } from './components/form-product/form-product.component';
 
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductslistComponent],
+  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductslistComponent, FormProductComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
